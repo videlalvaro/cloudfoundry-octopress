@@ -38,7 +38,7 @@ Once you finished writing your blog post run the following rake task to generate
 rake generate
 ```
 
-And now we are ready to push our app to Cloud Foundry
+And now we are ready to push our blog to Cloud Foundry
 
 ```bash
 vmc push
