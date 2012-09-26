@@ -23,7 +23,7 @@ git clone git://github.com/videlalvaro/cloudfoundry-octopress.git
 Now we are going to genereate the basic files for our Cloud Foundry applications. Let's call it `myblog`.
 
 ```bash
-rake --rakefile cloudfoundry-octopress/Rakefile new_app["myblog]
+rake --rakefile cloudfoundry-octopress/Rakefile new_app["myblog"]
 ```
 
 At this point we have a basic app to serve our blog. Let's add our first blog post using rake:
