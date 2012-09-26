@@ -2,6 +2,8 @@
 
 This project eases the deployment of [octopress](http://octopress.org/) blogs to [Cloud Foundry](http://cloudfoundry.com/).
 
+See a sample blog here: [http://octofoundry.cloudfoundry.com](http://octofoundry.cloudfoundry.com).
+
 ## Requirements ##
 
 - A Cloud Foundry account. Get one [here](https://my.cloudfoundry.com/signup).
