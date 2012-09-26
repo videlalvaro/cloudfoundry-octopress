@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "node-static": {
+      "version": "0.6.2",
+      "dependencies": {
+        "optimist": {
+          "version": "0.3.4",
+          "dependencies": {
+            "wordwrap": {
+              "version": "0.0.2"
+            }
+          }
+        },
+        "colors": {
+          "version": "0.6.0-1"
+        }
+      }
+    }
+  }
+}
