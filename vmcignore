@@ -4,7 +4,6 @@ Gemfile.lock
 README.markdown
 Rakefile
 _config.yml
-app.js
 cloudfoundry-octopress/
 config.rb
 config.ru
