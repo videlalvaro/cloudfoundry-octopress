@@ -5,7 +5,7 @@ require "stringex"
 current_dir = File.expand_path(File.dirname(__FILE__))
 
 # usage rake new_app[app_name]
-desc "Creates a new manifest file to deploy the blog to cloud foundry"
+desc "Creates a new manifest file to deploy the blog to Cloud Foundry"
 task :new_app, :name do |t, args|
   raise "### You need to provide an application name" unless !args.name.nil?
   appname = args.name
@@ -19,7 +19,7 @@ task :new_app, :name do |t, args|
   dest_manifest = "#{current_dir}/../manifest.yml"
 
   File.open(dest_manifest, 'w') do |f|
-    f.write manifest.sub!("app_name", appname)
+    f.write manifest.gsub!("app_name", appname)
   end
 
   puts "Copying static node.js server"
@@ -31,12 +31,9 @@ task :new_app, :name do |t, args|
   puts "Copying npm-shrinkwrap file"
   FileUtils.cp("#{current_dir}/npm-shrinkwrap.json", "#{current_dir}/../npm-shrinkwrap.json")
 
-  puts "Copying cloudfoundry.json"
-  FileUtils.cp("#{current_dir}/cloudfoundry.json", "#{current_dir}/../cloudfoundry.json")
-
 end
 
-## From octopress Rakefile
+## From Octopress Rakefile
 ## maybe we can include these somehow without the need for copy paste.
 def get_stdin(message)
   print message
